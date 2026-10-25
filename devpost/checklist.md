@@ -9,7 +9,7 @@ Build mode: fast. Approval basis: the learner requested an autonomous end-to-end
 
 ## Slices
 
-- [ ] **1. The faulted feeder runs and reacts to switch actions**
+- [x] **1. The faulted feeder runs and reacts to switch actions**
   Becomes usable: A browser app shows the complete synthetic one-line diagram, service totals and working switch controls backed by the graph engine.
   Why now: This puts the unique kernel on screen immediately and proves the risky graph representation before visual polish.
   PRD ref: `prd.md > Interactive One-Line Diagram`, `prd.md > The Core Journey`
@@ -19,7 +19,7 @@ Build mode: fast. Approval basis: the learner requested an autonomous end-to-end
   Learner check: Open the app and operate each switch. The diagram and current state label should change without a reload.
   Commit: `Build interactive feeder drill`
 
-- [ ] **2. Unsafe moves are blocked with evidence**
+- [x] **2. Unsafe moves are blocked with evidence**
   Becomes usable: The app rejects fault energization, dual-source paths and simplified overloads while the timeline and mission status explain each decision.
   Why now: This is the product's distinctive behavior and must be verified before styling or recording work.
   PRD ref: `prd.md > Pre-Action Safety Gate`, `prd.md > Mission, Feedback and Timeline`
@@ -29,7 +29,7 @@ Build mode: fast. Approval basis: the learner requested an autonomous end-to-end
   Learner check: Try closing Source A first, then follow the safe isolation sequence. The first move should be blocked and the final state should restore 700 customers plus the hospital.
   Commit: `Add deterministic switching safety gate`
 
-- [ ] **3. The complete drill is polished and recordable**
+- [x] **3. The complete drill is polished and recordable**
   Becomes usable: The responsive console has clear hierarchy, keyboard controls, guided demo playback and a finish panel suitable for a short video.
   Why now: Polish follows proven behavior, and the guided sequence makes the kernel easy for judges to see without setup friction.
   PRD ref: `prd.md > Look and Feel`, `prd.md > Guided Demo`, `prd.md > States and Boundaries`
@@ -39,7 +39,7 @@ Build mode: fast. Approval basis: the learner requested an autonomous end-to-end
   Learner check: Run Watch demo and judge whether the blocked move, safe sequence and final result are understandable without narration.
   Commit: `Polish guided restoration experience`
 
-- [ ] **4. The project is tested, documented and mapped**
+- [x] **4. The project is tested, documented and mapped**
   Becomes usable: Another person can install, run and understand the proof from the repository, and the finished behavior has a reproducible test record.
   Why now: Documentation and the map must describe the real final code rather than an earlier plan.
   PRD ref: `prd.md > What We're Building`, `prd.md > Non-Goals`
@@ -54,18 +54,22 @@ Build mode: fast. Approval basis: the learner requested an autonomous end-to-end
 - [ ] Final kick-the-tires exploration and feedback completed — pending learner review after delivery.
 
 ## Final Review
-- [ ] Final review complete — mechanical and visual agent QA will be recorded; learner readiness confirmation remains pending.
+- [x] Final review complete — mechanical and visual agent QA passed; learner readiness confirmation remains pending.
 
 ## Code Tour and App Map
-- [ ] Learning activity complete — brief recap can be delivered with the finished project; no learner interaction claimed.
+- [x] Learning activity complete — a reference-only code tour and reusable two-phase state pattern are recorded; no learner interaction is claimed.
 - [ ] Optional edit and transfer reflection addressed — pending learner choice after delivery.
-- [ ] `devpost/app-map.html` generated from finished code, checked, and shown, including a project-grounded practice to reuse
+- [x] `devpost/app-map.html` generated from finished code, checked, and shown, including a project-grounded practice to reuse
 
-Activity and evidence: Pending implementation.
-Route and stops: Pending finished paths.
+Activity and evidence: Trace why CB-A is rejected before mutation; evidence is the proposed-state check, red fault path, receipt and browser test.
+Route and stops: `scenario.ts` → `gridEngine.ts` → `useRestorationLab.ts` → `OneLineDiagram.tsx` → `restoration.spec.ts`.
 Edit outcome: Not applicable during autonomous build.
 Reflection: Not offered during the requested no-question run.
-Activity mode: Reference-only route planned.
+Activity mode: Reference-only route completed.
 
 ## Revisions
+
+- 2026-10-25: Shared state, safety logic and UI were built in one implementation pass, then recorded as separate verified commits for the usable drill, safety proof, video polish and documentation.
+- 2026-10-25: Mechanical review passed with 6 unit tests, 3 browser tests, a production build, visual screenshot inspection and an 84.01-second 1080p H.264/AAC video check.
+- Learner hands-on checkpoints remain open because the learner asked for an uninterrupted autonomous run. No feedback was invented.
 

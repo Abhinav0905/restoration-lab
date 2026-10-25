@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Restoration Lab · App Map</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080d0a;
+      --panel: #111914;
+      --panel-2: #172119;
+      --line: #304038;
+      --paper: #eff5f0;
+      --muted: #94a29a;
+      --green: #85f2a3;
+      --amber: #f3bd68;
+      --red: #ff715f;
+      font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at 45% -20%, rgba(74, 139, 91, .2), transparent 45%), var(--bg);
+      color: var(--paper);
+    }
+    a { color: inherit; }
+    .shell { width: min(1240px, calc(100% - 34px)); margin: 0 auto; padding: 28px 0 70px; }
+    header { display: grid; grid-template-columns: 1fr auto; gap: 30px; align-items: start; border-bottom: 1px solid var(--line); padding-bottom: 28px; }
+    .brand { color: var(--green); font-family: ui-monospace, monospace; font-size: 13px; font-weight: 800; letter-spacing: .18em; }
+    h1 { max-width: 900px; margin: 18px 0 13px; font-size: clamp(42px, 7vw, 84px); line-height: .95; letter-spacing: -.055em; }
+    .lede { max-width: 760px; color: #c6d0c9; font-size: 19px; line-height: 1.55; }
+    .stamp { border: 1px solid var(--line); padding: 14px 16px; color: var(--muted); font: 12px/1.7 ui-monospace, monospace; }
+    .stamp strong { color: var(--green); display: block; }
+    .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 24px 0; }
+    .metric, .card { border: 1px solid var(--line); background: rgba(17, 25, 20, .92); }
+    .metric { padding: 18px; }
+    .metric strong { display: block; font: 800 29px ui-monospace, monospace; }
+    .metric span { color: var(--muted); font: 11px ui-monospace, monospace; letter-spacing: .08em; text-transform: uppercase; }
+    section { margin-top: 54px; }
+    .kicker { color: var(--amber); font: 800 12px ui-monospace, monospace; letter-spacing: .18em; text-transform: uppercase; }
+    h2 { font-size: clamp(30px, 4vw, 52px); letter-spacing: -.04em; margin: 12px 0 22px; }
+    .route { position: relative; display: grid; gap: 12px; }
+    .stop { display: grid; grid-template-columns: 58px 1fr auto; gap: 18px; align-items: start; padding: 22px; border: 1px solid var(--line); background: var(--panel); }
+    .number { width: 42px; height: 42px; display: grid; place-items: center; color: var(--amber); border: 1px solid #5e5038; font: 800 13px ui-monospace, monospace; }
+    .stop h3 { margin: 0 0 8px; font-size: 20px; }
+    .stop p { margin: 0; color: var(--muted); line-height: 1.5; }
+    .file { text-decoration: none; color: var(--green); border: 1px solid #386346; padding: 9px 11px; font: 11px ui-monospace, monospace; white-space: nowrap; }
+    .file:hover, .file:focus { background: #173021; }
+    .flow { display: grid; grid-template-columns: repeat(7, auto); align-items: center; justify-content: start; gap: 11px; overflow-x: auto; padding: 24px; border: 1px solid var(--line); background: #0d140f; }
+    .flow span { min-width: 130px; padding: 16px; border: 1px solid var(--line); text-align: center; font: 700 13px ui-monospace, monospace; }
+    .flow b { color: var(--green); }
+    .split { display: grid; grid-template-columns: 1.2fr .8fr; gap: 16px; }
+    .card { padding: 24px; }
+    .card h3 { margin: 0 0 12px; }
+    .card p, .card li { color: #bdc8c0; line-height: 1.55; }
+    .card ul { margin: 0; padding-left: 21px; }
+    .practice { border-left: 6px solid var(--green); }
+    .screens { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    figure { margin: 0; border: 1px solid var(--line); background: var(--panel); }
+    figure img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+    figcaption { padding: 12px 14px; color: var(--muted); font: 11px ui-monospace, monospace; }
+    .checks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .check { padding: 19px; border: 1px solid #376b47; background: #102117; }
+    .check strong { color: var(--green); }
+    footer { margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; line-height: 1.6; }
+    @media (max-width: 820px) {
+      header, .split { grid-template-columns: 1fr; }
+      .metrics, .checks { grid-template-columns: 1fr 1fr; }
+      .stop { grid-template-columns: 46px 1fr; }
+      .file { grid-column: 2; justify-self: start; }
+      .screens { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 520px) { .metrics, .checks { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <div class="brand">⚡ RESTORATION LAB · CODE TOUR</div>
+        <h1>See why a switch is blocked before the grid changes.</h1>
+        <p class="lede">This offline map traces one unsafe action from the feeder data, through the graph checks, into the visible red path and switching record.</p>
+      </div>
+      <div class="stamp"><strong>SOURCE SNAPSHOT</strong>5c9383a<br />2026-10-25<br />No external assets</div>
+    </header>
+
+    <div class="metrics" aria-label="Build summary">
+      <div class="metric"><strong>8</strong><span>network nodes</span></div>
+      <div class="metric"><strong>4</strong><span>safety checks</span></div>
+      <div class="metric"><strong>6</strong><span>unit tests</span></div>
+      <div class="metric"><strong>3</strong><span>browser tests</span></div>
+    </div>
+
+    <section>
+      <div class="kicker">The state transition</div>
+      <h2>The current network never changes until the proposal passes.</h2>
+      <div class="flow" aria-label="Action evaluation flow">
+        <span>current state</span><b>→</b><span>proposed switch</span><b>→</b><span>graph checks</span><b>→</b><span>accept or reject</span>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">Guided route</div>
+      <h2>Trace the first blocked breaker close.</h2>
+      <div class="route">
+        <article class="stop"><div class="number">01</div><div><h3>Start with the synthetic feeder</h3><p>Source A is open, both fault isolators are closed and all 700 customers are out. The data is fixed so the lesson stays repeatable.</p></div><a class="file" href="../src/data/scenario.ts">scenario.ts</a></article>
+        <article class="stop"><div class="number">02</div><div><h3>Build a proposed state</h3><p><code>evaluateAction()</code> closes CB-A in a copy of the switch map. The trusted state is still untouched.</p></div><a class="file" href="../src/lib/gridEngine.ts">gridEngine.ts</a></article>
+        <article class="stop"><div class="number">03</div><div><h3>Walk from each source</h3><p>The engine builds an adjacency map from closed edges, then performs a breadth-first walk. Source A can reach the fault, so the proposal gets a <code>fault_energized</code> finding.</p></div><a class="file" href="../src/lib/gridEngine.ts">analysis code</a></article>
+        <article class="stop"><div class="number">04</div><div><h3>Reject without mutation</h3><p>The reducer keeps the original switch map, adds a blocked event and briefly stores the unsafe edge IDs for the red path.</p></div><a class="file" href="../src/hooks/useRestorationLab.ts">drill hook</a></article>
+        <article class="stop"><div class="number">05</div><div><h3>Turn evidence into feedback</h3><p>The SVG applies the danger state to the exact path. The mission panel shows the same finding in plain language.</p></div><a class="file" href="../src/components/OneLineDiagram.tsx">diagram view</a></article>
+        <article class="stop"><div class="number">06</div><div><h3>Prove both paths</h3><p>Unit tests cover unsafe topology and capacity cases. Browser tests verify the visible block, the safe sequence and the timed demo.</p></div><a class="file" href="../tests/restoration.spec.ts">browser tests</a></article>
+      </div>
+    </section>
+
+    <section class="split">
+      <div class="card practice"><div class="kicker">Practice to reuse</div><h3>Separate proposal from commitment</h3><p>When a user action could create a risky state, calculate the next state in isolation. Run small, named checks. Commit only after every check passes. Keep the rejected proposal long enough to explain what failed.</p></div>
+      <div class="card"><div class="kicker">Try it yourself</div><h3>Change one limit</h3><ul><li>Lower Backup Source B capacity in <code>scenario.ts</code>.</li><li>Run the six unit tests.</li><li>Watch the overload finding identify the changed constraint.</li></ul></div>
+    </section>
+
+    <section>
+      <div class="kicker">Visible proof</div>
+      <h2>One drill, three states.</h2>
+      <div class="screens">
+        <figure><img src="../docs/screenshots/01-start.png" alt="Starting outage state" /><figcaption>01 · all customers interrupted</figcaption></figure>
+        <figure><img src="../docs/screenshots/02-blocked.png" alt="Unsafe source close blocked" /><figcaption>02 · fault path blocked in red</figcaption></figure>
+        <figure><img src="../docs/screenshots/03-restored.png" alt="Safe final restoration" /><figcaption>03 · 700 customers restored</figcaption></figure>
+      </div>
+    </section>
+
+    <section>
+      <div class="kicker">Verification record</div>
+      <h2>What was checked before delivery.</h2>
+      <div class="checks"><div class="check"><strong>✓ Engine</strong><br />6 passing tests</div><div class="check"><strong>✓ Browser</strong><br />3 passing flows</div><div class="check"><strong>✓ Production</strong><br />Vite build complete</div></div>
+    </section>
+
+    <footer>Training model only. All data is synthetic. Restoration Lab is not for operational switching, protection studies or control-system use.</footer>
+  </main>
+</body>
+</html>

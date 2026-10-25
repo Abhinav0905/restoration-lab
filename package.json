@@ -13,9 +13,6 @@
     "verify": "npm test -- --run && npm run build && npm run test:e2e"
   },
   "dependencies": {
-    "@vitejs/plugin-react": "latest",
-    "vite": "latest",
-    "typescript": "latest",
     "react": "latest",
     "react-dom": "latest"
   },
@@ -23,10 +20,12 @@
     "@playwright/test": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "vitest": "latest"
+    "@vitejs/plugin-react": "latest",
+    "typescript": "latest",
+    "vite": "latest",
+    "vitest": "4.1.12"
   },
   "engines": {
     "node": ">=20"
   }
 }
-
