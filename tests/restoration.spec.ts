@@ -10,6 +10,16 @@ test('explains the problem and solution before the drill', async ({page}) => {
   await expect(page.getByRole('heading', {name: 'How Restoration Lab solves it'})).toBeVisible();
   await expect(page.getByText(/Every proposed action is checked against four deterministic safety rules/)).toBeVisible();
   await expect(page.getByText(/press Watch demo to see one dangerous close rejected/)).toBeVisible();
+
+  const diagramBox = await page.locator('.diagram-panel').boundingBox();
+  const statusBox = await page.locator('.status-rail').boundingBox();
+  const problemTypeSize = await page.getByRole('heading', {name: 'The problem'}).evaluate((element) => (
+    Number.parseFloat(getComputedStyle(element).fontSize)
+  ));
+
+  expect(diagramBox?.width).toBeGreaterThan(1000);
+  expect(diagramBox?.y).toBeLessThan(statusBox?.y ?? 0);
+  expect(problemTypeSize).toBeGreaterThanOrEqual(16);
 });
 
 test('blocks an action that would energize the fault', async ({page}) => {

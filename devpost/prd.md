@@ -34,7 +34,7 @@ One responsive training console.
 On narrow screens the rails stack below the diagram. The controls remain usable with a keyboard.
 
 ## Look and Feel
-An industrial training console, not a control room replica. Use near-black charcoal, off-white text, amber attention states, red danger states and electric green safe energized paths. Typography should combine a sturdy sans face with compact monospaced labels. Motion should clarify power flow and blocked actions, never decorate empty space.
+A calm, readable learning page rather than a crowded control-room replica. Use a light neutral canvas, white explanation and status cards and one dark forest technical panel for the interactive diagram. Give the diagram a full row, then place status and mission evidence in two roomy columns below it. Body copy should be at least 13-15px on desktop, with larger headings that can be understood at a glance. Amber marks attention, red marks danger and green marks safe energized paths. Motion should clarify power flow and blocked actions, never decorate empty space.
 
 ## Features and Behavior
 

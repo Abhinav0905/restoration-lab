@@ -42,12 +42,12 @@ Tradeoff: the project favors one clear browser experience over a reusable electr
 ## Look and Feel
 Implements `prd.md > Look and Feel`.
 
-Use a charcoal console with a subtle engineering grid, high-contrast text and a centered one-line diagram. Safe energized paths use green with a moving dash cue. Warning copy uses amber. Red appears only for the physical fault and blocked-action evidence. Buttons should read like labeled equipment controls, not rounded consumer-app pills.
+Use a flat light-neutral page with white cards and no decorative page texture. The opening brief uses three separate cards with 14px body copy. The one-line diagram spans the full content width in a dark forest panel, while service status and mission evidence sit in two light panels beneath it. Safe energized paths use green with a moving dash cue. Warning copy uses amber. Red appears only for the physical fault and blocked-action evidence. Buttons should read like labeled equipment controls, not rounded consumer-app pills.
 
 ## Components
 
 ### RestorationLab Page
-Owns the responsive layout and connects the drill hook to each panel. Before the technical console, it renders a three-part judge brief that explains the outage problem, why order matters and how the deterministic pre-action gate teaches the solution.
+Owns the responsive layout and connects the drill hook to each panel. Before the technical console, it renders a large three-part judge brief that explains the outage problem, why order matters and how the deterministic pre-action gate teaches the solution. The diagram receives the full first row. Service status and mission evidence follow beneath it, then stack on narrower screens.
 PRD ref: `prd.md > Screens and Layout`.
 
 ### OneLineDiagram
