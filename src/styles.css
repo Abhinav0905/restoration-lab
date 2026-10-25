@@ -145,6 +145,8 @@ a:focus-visible {
   letter-spacing: -.035em;
 }
 
+.audience-line { margin: 9px 0 0; color: #c2cdc6; font-size: 13px; line-height: 1.45; }
+
 .mission-banner .kicker { color: #f0bd6b; }
 
 .mission-facts { display: flex; gap: 24px; }
@@ -169,6 +171,9 @@ a:focus-visible {
 .brief-grid article > span { color: var(--amber); font-family: ui-monospace, monospace; font-size: 12px; font-weight: 800; padding-top: 3px; }
 .brief-grid h3 { margin: 0 0 8px; font-size: 16px; }
 .brief-grid p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.6; }
+.proof-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 12px; }
+.proof-grid span { padding: 11px 13px; border: 1px solid #dce5de; border-radius: 8px; background: #fbfcfa; color: var(--muted); font-family: ui-monospace, monospace; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+.proof-grid strong { color: var(--green); font-size: 15px; }
 .judge-start { margin: 18px 0 0; padding: 14px 16px; border-left: 4px solid var(--green); background: var(--green-deep); color: #314b39; font-size: 14px; line-height: 1.5; }
 .judge-start strong { color: var(--green); font-family: ui-monospace, monospace; letter-spacing: .08em; }
 .judge-start b { color: var(--paper); }
@@ -371,6 +376,7 @@ footer p { margin: 0; }
   .judge-brief-header > p { text-align: left; }
   .brief-grid { grid-template-columns: 1fr; gap: 14px; }
   .brief-grid article { padding: 17px; }
+  .proof-grid { grid-template-columns: repeat(2, 1fr); }
   .status-rail, .mission-panel { padding: 22px; }
 }
 
@@ -384,6 +390,7 @@ footer p { margin: 0; }
   .mission-facts span { font-size: 9px; }
   .mission-facts strong { font-size: 17px; }
   .judge-brief { padding: 20px 16px; }
+  .proof-grid { grid-template-columns: 1fr; }
   .diagram-legend { display: none; }
   .completion-toast { grid-template-columns: auto 1fr; }
   .completion-score { grid-column: 1 / -1; }

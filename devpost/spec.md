@@ -47,7 +47,7 @@ Use a flat light-neutral page with white cards and no decorative page texture. T
 ## Components
 
 ### RestorationLab Page
-Owns the responsive layout and connects the drill hook to each panel. Before the technical console, it renders a large three-part judge brief that explains the outage problem, why order matters and how the deterministic pre-action gate teaches the solution. The diagram receives the full first row. Service status and mission evidence follow beneath it, then stack on narrower screens.
+Owns the responsive layout and connects the drill hook to each panel. Before the technical console, it names the learner audience and renders a large three-part judge brief that explains the outage problem, why order matters and how the deterministic pre-action gate teaches the solution. A small evidence strip records test and connection counts. The diagram receives the full first row. Service status and mission evidence follow beneath it, then stack on narrower screens.
 PRD ref: `prd.md > Screens and Layout`.
 
 ### OneLineDiagram

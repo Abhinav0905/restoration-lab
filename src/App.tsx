@@ -42,6 +42,7 @@ export const App = () => {
         <div>
           <span className="kicker">FAULT ISOLATION + SERVICE RESTORATION</span>
           <h1>Bring the hospital back. Keep the fault dead.</h1>
+          <p className="audience-line">For junior distribution engineers and engineering students learning restoration order.</p>
         </div>
         <div className="mission-facts">
           <span><strong>700</strong> interrupted</span>
@@ -80,6 +81,12 @@ export const App = () => {
               <p>Every proposed action is checked against four deterministic safety rules before the network changes. Unsafe moves stay blocked and name the reason.</p>
             </div>
           </article>
+        </div>
+        <div className="proof-grid" aria-label="Verified project evidence">
+          <span><strong>4</strong> safety rules</span>
+          <span><strong>6</strong> graph tests</span>
+          <span><strong>4</strong> browser journeys</span>
+          <span><strong>0</strong> live-grid connections</span>
         </div>
         <p className="judge-start"><strong>Start here:</strong> press <b>Watch demo</b> to see one dangerous close rejected, then the safe four-action restoration.</p>
       </section>

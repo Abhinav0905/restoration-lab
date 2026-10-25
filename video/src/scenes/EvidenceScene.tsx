@@ -64,8 +64,8 @@ export const EvidenceScene = () => {
           padding: '30px 32px',
         }}
       >
-        <div style={{fontFamily: mono, color: palette.green, fontSize: 15, letterSpacing: 2.1}}>BUILD RECORD</div>
-        {['scope.md', 'prd.md', 'spec.md', '6 unit tests', '3 browser tests', 'app-map.html'].map((item, index) => (
+        <div style={{fontFamily: mono, color: palette.green, fontSize: 15, letterSpacing: 2.1}}>DEVPOST LEARN SKILL PACK</div>
+        {['scope.md', 'prd.md', 'spec.md', 'build checklist', '6 unit tests', '4 browser tests'].map((item, index) => (
           <div
             key={item}
             style={{

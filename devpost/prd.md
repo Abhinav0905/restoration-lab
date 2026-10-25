@@ -24,8 +24,9 @@ Approval basis: the learner approved the proposed product direction and delegate
 One responsive training console.
 
 - Top bar: product name, educational-simulator label, Reset and Watch demo controls.
-- Mission strip: the outage story and the three restoration goals.
+- Mission strip: the outage story, named learner audience and the three restoration goals.
 - Judge brief: three compact statements labeled The problem, Why it matters and How we solve it, followed by one clear starting instruction.
+- Evidence strip: four safety rules, six graph tests, four browser journeys and zero live-grid connections.
 - Center: the interactive one-line diagram. This is the visual focus.
 - Left rail: live service totals and safety-check status.
 - Right rail: coach message, optional hint and event timeline.

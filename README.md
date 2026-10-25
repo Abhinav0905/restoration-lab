@@ -47,7 +47,7 @@ The safe sequence is:
 npm run verify
 ```
 
-That command runs six graph-engine tests, builds the production bundle and runs three browser tests. The browser suite checks the blocked action, the safe restoration and the timed Watch demo path.
+That command runs six graph-engine tests, builds the production bundle and runs four browser tests. The browser suite checks the judge-first explanation, blocked action, safe restoration and timed Watch demo path.
 
 ## Project map
 

@@ -56,6 +56,7 @@ Build mode: fast. Approval basis: the learner requested an autonomous end-to-end
 ## Final Review
 - [x] Final review complete — mechanical and visual agent QA passed; learner readiness confirmation remains pending.
 - [ ] Judge-first opening is readable at a glance: clean light background, larger type, full-width diagram and clear problem/why/solution brief
+- [ ] Judge-first evidence pass names the learner audience and exposes verified test, rule and connection counts
 
 ## Code Tour and App Map
 - [x] Learning activity complete — a reference-only code tour and reusable two-phase state pattern are recorded; no learner interaction is claimed.
@@ -75,4 +76,5 @@ Activity mode: Reference-only route completed.
 - Learner hands-on checkpoints remain open because the learner asked for an uninterrupted autonomous run. No feedback was invented.
 - 2026-10-25: Learner feedback found that the console opened faster than a judge could understand it. Add a ten-second problem/why/solution brief without changing the drill or safety model.
 - 2026-10-25: Learner approved the content but found the dense dark layout, small type and background hard to scan. Move the diagram full width, place status panels below it, enlarge the type and use a clean light canvas with one dark technical focal panel.
+- 2026-10-25: Final judging review asked for more visible proof. Name the learner audience on the first screen and add counts that judges can trace to the scenario and automated checks.
 
