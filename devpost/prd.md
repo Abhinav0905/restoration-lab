@@ -11,19 +11,21 @@ Source: `scope.md > The Unique Kernel`, `scope.md > Who It's For`.
 Approval basis: the learner approved the proposed product direction and delegated the remaining product details for an autonomous build.
 
 ## The Core Journey
-1. The learner lands directly in the drill. The mission says a fault has interrupted 700 customers and a hospital.
-2. The one-line diagram shows two sources, a faulted segment, four switches and three customer groups. Energized and de-energized paths are visually distinct.
-3. The learner selects a switch. The app evaluates the proposed network before applying it.
-4. An unsafe action is blocked. The diagram briefly marks the risky path and a receipt explains the broken rule.
-5. A safe action changes the network. Customer, hospital and action counters update, and the event appears in the timeline.
-6. The learner continues until the fault is isolated, the healthy left section is fed from Source A and the hospital plus Riverside are fed through the backup tie.
-7. A completion panel reports the accepted action count, blocked attempts and restored service. Reset starts the drill again.
+1. The learner lands on a ten-second brief that states the outage problem, why switching order matters and how the pre-action safety gate teaches the solution.
+2. The mission says a fault has interrupted 700 customers and a hospital, and points to Watch demo as the fastest guided start.
+3. The one-line diagram shows two sources, a faulted segment, four switches and three customer groups. Energized and de-energized paths are visually distinct.
+4. The learner selects a switch. The app evaluates the proposed network before applying it.
+5. An unsafe action is blocked. The diagram briefly marks the risky path and a receipt explains the broken rule.
+6. A safe action changes the network. Customer, hospital and action counters update, and the event appears in the timeline.
+7. The learner continues until the fault is isolated, the healthy left section is fed from Source A and the hospital plus Riverside are fed through the backup tie.
+8. A completion panel reports the accepted action count, blocked attempts and restored service. Reset starts the drill again.
 
 ## Screens and Layout
 One responsive training console.
 
 - Top bar: product name, educational-simulator label, Reset and Watch demo controls.
 - Mission strip: the outage story and the three restoration goals.
+- Judge brief: three compact statements labeled The problem, Why it matters and How we solve it, followed by one clear starting instruction.
 - Center: the interactive one-line diagram. This is the visual focus.
 - Left rail: live service totals and safety-check status.
 - Right rail: coach message, optional hint and event timeline.

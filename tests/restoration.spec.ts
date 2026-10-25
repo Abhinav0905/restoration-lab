@@ -4,6 +4,14 @@ test.beforeEach(async ({page}) => {
   await page.goto('/');
 });
 
+test('explains the problem and solution before the drill', async ({page}) => {
+  await expect(page.getByRole('heading', {name: 'The problem'})).toBeVisible();
+  await expect(page.getByRole('heading', {name: 'Why it matters'})).toBeVisible();
+  await expect(page.getByRole('heading', {name: 'How Restoration Lab solves it'})).toBeVisible();
+  await expect(page.getByText(/Every proposed action is checked against four deterministic safety rules/)).toBeVisible();
+  await expect(page.getByText(/press Watch demo to see one dangerous close rejected/)).toBeVisible();
+});
+
 test('blocks an action that would energize the fault', async ({page}) => {
   await page.getByTestId('switch-breaker-a').click();
 

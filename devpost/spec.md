@@ -47,7 +47,7 @@ Use a charcoal console with a subtle engineering grid, high-contrast text and a 
 ## Components
 
 ### RestorationLab Page
-Owns the responsive layout and connects the drill hook to each panel.
+Owns the responsive layout and connects the drill hook to each panel. Before the technical console, it renders a three-part judge brief that explains the outage problem, why order matters and how the deterministic pre-action gate teaches the solution.
 PRD ref: `prd.md > Screens and Layout`.
 
 ### OneLineDiagram

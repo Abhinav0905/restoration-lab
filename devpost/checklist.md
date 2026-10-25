@@ -55,6 +55,7 @@ Build mode: fast. Approval basis: the learner requested an autonomous end-to-end
 
 ## Final Review
 - [x] Final review complete — mechanical and visual agent QA passed; learner readiness confirmation remains pending.
+- [ ] Judge-first opening states the problem, why it matters, how the safety gate solves it and the fastest way to see the lesson
 
 ## Code Tour and App Map
 - [x] Learning activity complete — a reference-only code tour and reusable two-phase state pattern are recorded; no learner interaction is claimed.
@@ -72,4 +73,5 @@ Activity mode: Reference-only route completed.
 - 2026-10-25: Shared state, safety logic and UI were built in one implementation pass, then recorded as separate verified commits for the usable drill, safety proof, video polish and documentation.
 - 2026-10-25: Mechanical review passed with 6 unit tests, 3 browser tests, a production build, visual screenshot inspection and an 84.01-second 1080p H.264/AAC video check.
 - Learner hands-on checkpoints remain open because the learner asked for an uninterrupted autonomous run. No feedback was invented.
+- 2026-10-25: Learner feedback found that the console opened faster than a judge could understand it. Add a ten-second problem/why/solution brief without changing the drill or safety model.
 

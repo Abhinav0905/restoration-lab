@@ -50,6 +50,40 @@ export const App = () => {
         </div>
       </section>
 
+      <section className="judge-brief" aria-labelledby="judge-brief-title">
+        <div className="judge-brief-header">
+          <div>
+            <span className="kicker">THE 10-SECOND BRIEF</span>
+            <h2 id="judge-brief-title">Understand the lesson before touching a switch.</h2>
+          </div>
+          <p>One unsafe close should teach more than another static diagram.</p>
+        </div>
+        <div className="brief-grid">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>The problem</h3>
+              <p>A cable fault has cut power to 700 customers and a community hospital. One wrong close can energize damaged cable or connect two sources.</p>
+            </div>
+          </article>
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Why it matters</h3>
+              <p>Static diagrams show equipment, not decision order. Trainees need to see why an unsafe move fails before they practice the safe sequence.</p>
+            </div>
+          </article>
+          <article>
+            <span>03</span>
+            <div>
+              <h3>How Restoration Lab solves it</h3>
+              <p>Every proposed action is checked against four deterministic safety rules before the network changes. Unsafe moves stay blocked and name the reason.</p>
+            </div>
+          </article>
+        </div>
+        <p className="judge-start"><strong>Start here:</strong> press <b>Watch demo</b> to see one dangerous close rejected, then the safe four-action restoration.</p>
+      </section>
+
       <section className="workspace">
         <StatusRail
           analysis={lab.analysis}
