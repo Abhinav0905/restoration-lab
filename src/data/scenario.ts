@@ -1,0 +1,165 @@
+import type {Scenario, SwitchStates} from '../types';
+
+export const restorationScenario: Scenario = {
+  sourceIds: ['source-a', 'source-b'],
+  faultNodeId: 'fault-zone',
+  hospitalNodeId: 'hospital',
+  nodes: [
+    {
+      id: 'source-a',
+      label: 'Source A',
+      shortLabel: 'A',
+      kind: 'source',
+      capacityMw: 0.9,
+      x: 72,
+      y: 260,
+    },
+    {
+      id: 'bus-west',
+      label: 'West bus',
+      shortLabel: 'W',
+      kind: 'bus',
+      x: 280,
+      y: 260,
+    },
+    {
+      id: 'west-campus',
+      label: 'West campus',
+      shortLabel: 'WEST',
+      kind: 'load',
+      customers: 280,
+      demandMw: 0.42,
+      x: 280,
+      y: 74,
+    },
+    {
+      id: 'fault-zone',
+      label: 'Faulted cable',
+      shortLabel: 'FAULT',
+      kind: 'fault',
+      x: 550,
+      y: 260,
+    },
+    {
+      id: 'bus-east',
+      label: 'East bus',
+      shortLabel: 'E',
+      kind: 'bus',
+      x: 820,
+      y: 260,
+    },
+    {
+      id: 'riverside',
+      label: 'Riverside',
+      shortLabel: 'RIVER',
+      kind: 'load',
+      customers: 360,
+      demandMw: 0.5,
+      x: 820,
+      y: 74,
+    },
+    {
+      id: 'hospital',
+      label: 'Community hospital',
+      shortLabel: 'H',
+      kind: 'load',
+      critical: true,
+      customers: 60,
+      demandMw: 0.18,
+      x: 820,
+      y: 448,
+    },
+    {
+      id: 'source-b',
+      label: 'Backup Source B',
+      shortLabel: 'B',
+      kind: 'source',
+      capacityMw: 0.75,
+      x: 1060,
+      y: 260,
+    },
+  ],
+  switches: [
+    {
+      id: 'breaker-a',
+      label: 'Source A breaker',
+      shortLabel: 'CB-A',
+      initialClosed: false,
+    },
+    {
+      id: 'iso-west',
+      label: 'West fault isolator',
+      shortLabel: 'ISO-W',
+      initialClosed: true,
+    },
+    {
+      id: 'iso-east',
+      label: 'East fault isolator',
+      shortLabel: 'ISO-E',
+      initialClosed: true,
+    },
+    {
+      id: 'tie-b',
+      label: 'Backup tie switch',
+      shortLabel: 'TIE-B',
+      initialClosed: false,
+    },
+  ],
+  edges: [
+    {
+      id: 'edge-breaker-a',
+      from: 'source-a',
+      to: 'bus-west',
+      kind: 'switch',
+      switchId: 'breaker-a',
+    },
+    {
+      id: 'edge-west-load',
+      from: 'bus-west',
+      to: 'west-campus',
+      kind: 'line',
+    },
+    {
+      id: 'edge-iso-west',
+      from: 'bus-west',
+      to: 'fault-zone',
+      kind: 'switch',
+      switchId: 'iso-west',
+    },
+    {
+      id: 'edge-iso-east',
+      from: 'fault-zone',
+      to: 'bus-east',
+      kind: 'switch',
+      switchId: 'iso-east',
+    },
+    {
+      id: 'edge-riverside',
+      from: 'bus-east',
+      to: 'riverside',
+      kind: 'line',
+    },
+    {
+      id: 'edge-hospital',
+      from: 'bus-east',
+      to: 'hospital',
+      kind: 'line',
+    },
+    {
+      id: 'edge-tie-b',
+      from: 'source-b',
+      to: 'bus-east',
+      kind: 'switch',
+      switchId: 'tie-b',
+    },
+  ],
+};
+
+export const initialSwitchStates = (scenario: Scenario): SwitchStates =>
+  Object.fromEntries(
+    scenario.switches.map((gridSwitch) => [
+      gridSwitch.id,
+      gridSwitch.initialClosed,
+    ]),
+  );
+
