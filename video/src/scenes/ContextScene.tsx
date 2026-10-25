@@ -36,7 +36,7 @@ export const ContextScene = () => {
       <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(90deg, #080d0a 0%, #080d0a 31%, rgba(8,13,10,.78) 50%, transparent 78%)'}} />
 
       <div style={{position: 'absolute', left: 116, top: 105, width: 760}}>
-        <Eyebrow>Safe practice before field pressure</Eyebrow>
+        <Eyebrow>2 · How we solved it</Eyebrow>
         <div style={{fontSize: 73, fontWeight: 850, lineHeight: 1.02, letterSpacing: -3.7, marginTop: 24}}>
           A decision trainer,<br />not a slide deck.
         </div>

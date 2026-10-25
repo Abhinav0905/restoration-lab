@@ -25,7 +25,7 @@ export const DemoScene = () => {
         }}
       >
         <span style={{width: 12, height: 12, borderRadius: '50%', background: palette.red}} />
-        LIVE TRAINING RUN · DRILL RL-01
+        4 · LIVE PROOF · DRILL RL-01
       </div>
       <div
         style={{

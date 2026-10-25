@@ -15,44 +15,44 @@ Restoration Lab turns high-stakes reasoning into a safe, repeatable drill.
 The one-line board is synthetic, local and built for junior distribution engineers.
 
 5
-00:00:25,500 --> 00:00:29,700
-Closing Source A too soon is blocked before the network changes.
-
-6
-00:00:29,700 --> 00:00:32,200
-The exact unsafe path flashes red.
-
-7
-00:00:32,200 --> 00:00:35,200
-Now the trainee opens both isolators.
-
-8
-00:00:35,200 --> 00:00:38,000
-Source A safely restores West campus.
-
-9
-00:00:38,000 --> 00:00:41,900
-Backup Source B picks up Riverside and the hospital.
-
-10
-00:00:41,900 --> 00:00:47,650
-Four accepted actions. 700 customers restored. The fault stays dead.
-
-11
-00:00:49,500 --> 00:00:52,800
+00:00:19,500 --> 00:00:22,800
 Every verdict comes from deterministic graph checks.
 
-12
-00:00:52,800 --> 00:00:58,000
+6
+00:00:22,800 --> 00:00:28,000
 Fault reachability, dual-source backfeed, source capacity and critical-load restoration.
 
-13
-00:00:58,000 --> 00:01:02,200
+7
+00:00:28,000 --> 00:00:32,200
 No live grid data. No operational command. No black-box answer.
 
-14
-00:01:02,200 --> 00:01:11,250
+8
+00:00:32,200 --> 00:00:41,250
 The repo keeps the plan, tests and code tour together, so the build can be inspected.
+
+9
+00:00:49,500 --> 00:00:53,700
+Closing Source A too soon is blocked before the network changes.
+
+10
+00:00:53,700 --> 00:00:56,200
+The exact unsafe path flashes red.
+
+11
+00:00:56,200 --> 00:00:59,200
+Now the trainee opens both isolators.
+
+12
+00:00:59,200 --> 00:01:02,000
+Source A safely restores West campus.
+
+13
+00:01:02,000 --> 00:01:05,900
+Backup Source B picks up Riverside and the hospital.
+
+14
+00:01:05,900 --> 00:01:11,650
+Four accepted actions. 700 customers restored. The fault stays dead.
 
 15
 00:01:13,500 --> 00:01:18,200

@@ -16,11 +16,11 @@ export const RestorationLabVideo = () => {
       <Series.Sequence name="Concept" durationInFrames={330} premountFor={fps}>
         <ContextScene />
       </Series.Sequence>
-      <Series.Sequence name="Recorded demo" durationInFrames={900} premountFor={fps}>
-        <DemoScene />
-      </Series.Sequence>
       <Series.Sequence name="Safety evidence" durationInFrames={720} premountFor={fps}>
         <EvidenceScene />
+      </Series.Sequence>
+      <Series.Sequence name="Recorded demo" durationInFrames={900} premountFor={fps}>
+        <DemoScene />
       </Series.Sequence>
       <Series.Sequence name="Closing" durationInFrames={330} premountFor={fps}>
         <ClosingScene />
@@ -34,8 +34,8 @@ export const RestorationLabCompositions = () => (
     <Folder name="Scenes">
       <Composition id="Opening" component={OpeningScene} durationInFrames={240} fps={30} width={1920} height={1080} />
       <Composition id="Concept" component={ContextScene} durationInFrames={330} fps={30} width={1920} height={1080} />
-      <Composition id="RecordedDemo" component={DemoScene} durationInFrames={900} fps={30} width={1920} height={1080} />
       <Composition id="SafetyEvidence" component={EvidenceScene} durationInFrames={720} fps={30} width={1920} height={1080} />
+      <Composition id="RecordedDemo" component={DemoScene} durationInFrames={900} fps={30} width={1920} height={1080} />
       <Composition id="Closing" component={ClosingScene} durationInFrames={330} fps={30} width={1920} height={1080} />
     </Folder>
     <Composition

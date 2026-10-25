@@ -19,7 +19,7 @@ export const EvidenceScene = () => {
       <Audio name="Evidence narration" from={15} src={staticFile('audio/04-evidence.wav')} premountFor={fps} />
 
       <div style={{position: 'absolute', left: 116, top: 86, width: 1688}}>
-        <Eyebrow>Explainable by construction</Eyebrow>
+        <Eyebrow>3 · Technical details</Eyebrow>
         <div style={{fontSize: 74, fontWeight: 860, lineHeight: 1.03, letterSpacing: -4, marginTop: 22}}>
           Four checks. One plain-language receipt.
         </div>

@@ -47,7 +47,7 @@ export const OpeningScene = () => {
       </div>
 
       <div style={{position: 'absolute', left: 118, top: 326, width: 1290}}>
-        <Eyebrow>One fault. Four actions. Zero unsafe moves.</Eyebrow>
+        <Eyebrow>1 · Problem statement</Eyebrow>
         <div
           style={{
             fontSize: 104,
