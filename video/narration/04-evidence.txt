@@ -1,0 +1,1 @@
+Every verdict comes from deterministic graph checks: fault reachability, dual-source backfeed, source capacity and critical-load restoration. No live grid data. No operational command. No black-box answer. The repo keeps the scope, product requirements, technical plan, tests and code tour together, so the reasoning behind the build is inspectable.

@@ -1,0 +1,1 @@
+Watch what happens when the trainee closes Source A too soon. The action is blocked before the network changes, and the exact unsafe path flashes red. Now the trainee opens both isolators. Source A can safely restore West campus. Backup Source B then picks up Riverside and the hospital. Four accepted actions. Seven hundred customers restored. The fault stays dead.
