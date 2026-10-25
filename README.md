@@ -2,6 +2,8 @@
 
 Restoration Lab is an interactive switching drill for junior distribution engineers. A synthetic cable fault has interrupted 700 customers and a community hospital. The trainee has to isolate the fault, restore the healthy sections and avoid backfeed or an overloaded source.
 
+**[Open the live interactive demo](https://abhinav0905.github.io/restoration-lab/)**
+
 The main idea is simple: check every proposed switch action before it changes the network. Unsafe moves are rejected with a plain-language reason and a visible path on the one-line diagram.
 
 ![Restoration Lab after a safe restoration](docs/screenshots/03-restored.png)
@@ -20,6 +22,8 @@ The safety gate checks four things:
 All data is synthetic. The model is intentionally small and deterministic so a learner can inspect why an action passed or failed. This is not an operational switching tool and does not calculate AC power flow.
 
 ## Try it
+
+Use the [live GitHub Pages app](https://abhinav0905.github.io/restoration-lab/), or run it locally.
 
 Requires Node.js 20 or newer.
 
