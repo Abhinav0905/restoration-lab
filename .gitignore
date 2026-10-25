@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+.env
+.env.*
+!.env.example
+.DS_Store
+.agents/
+.claude/
+/devpost/learner-profile.md
+/artifacts/
+/video/node_modules/
+/video/out/
+
