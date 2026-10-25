@@ -14,7 +14,8 @@
     "@remotion/media": "4.0.538",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "remotion": "4.0.538"
+    "remotion": "4.0.538",
+    "zod": "4.5.4"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.538",
@@ -34,6 +35,6 @@
     "esbuild": false
   },
   "overrides": {
-    "zod": "4.6.6"
+    "zod": "4.5.4"
   }
 }

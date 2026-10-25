@@ -88,7 +88,7 @@ export const OpeningScene = () => {
       <CaptionLayer>
         <BasicCaptions
           name="Opening captions"
-          width={1450}
+          width={1570}
           captions={[
             {text: 'A fault has cut power to 700 customers, including a community hospital.', startMs: 300, endMs: 4500, timestampMs: 2400, confidence: null, pageBreakAfter: true},
             {text: 'One wrong switch can energize the damaged cable.', startMs: 4500, endMs: 7970, timestampMs: 6200, confidence: null},

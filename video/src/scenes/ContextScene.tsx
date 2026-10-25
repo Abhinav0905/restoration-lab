@@ -37,10 +37,10 @@ export const ContextScene = () => {
 
       <div style={{position: 'absolute', left: 116, top: 105, width: 760}}>
         <Eyebrow>2 · How we solved it</Eyebrow>
-        <div style={{fontSize: 73, fontWeight: 850, lineHeight: 1.02, letterSpacing: -3.7, marginTop: 24}}>
+        <div style={{fontSize: 88, fontWeight: 850, lineHeight: 1.02, letterSpacing: -4.4, marginTop: 24}}>
           A decision trainer,<br />not a slide deck.
         </div>
-        <p style={{fontSize: 27, color: '#c9d3cc', lineHeight: 1.5, width: 690, marginTop: 30}}>
+        <p style={{fontSize: 31, color: '#c9d3cc', lineHeight: 1.42, width: 710, marginTop: 30}}>
           Every switch is interactive. Every proposed state is checked before it can alter the training network.
         </p>
         <div style={{display: 'flex', gap: 14, marginTop: 44}}>
@@ -64,7 +64,7 @@ export const ContextScene = () => {
       <CaptionLayer>
         <BasicCaptions
           name="Concept captions"
-          width={1450}
+          width={1570}
           captions={[
             {text: 'Restoration Lab turns high-stakes reasoning into a safe, repeatable drill.', startMs: 500, endMs: 5200, timestampMs: 2850, confidence: null, pageBreakAfter: true},
             {text: 'The one-line board is synthetic, local and built for junior distribution engineers.', startMs: 5200, endMs: 9700, timestampMs: 7450, confidence: null},

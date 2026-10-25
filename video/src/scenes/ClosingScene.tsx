@@ -49,7 +49,7 @@ export const ClosingScene = () => {
       <CaptionLayer>
         <BasicCaptions
           name="Closing captions"
-          width={1450}
+          width={1570}
           captions={[
             {text: 'Restoration Lab is a focused proof of concept for learning safe restoration order.', startMs: 500, endMs: 5200, timestampMs: 2850, confidence: null, pageBreakAfter: true},
             {text: 'See the consequence before a mistake happens.', startMs: 5200, endMs: 9480, timestampMs: 7340, confidence: null},

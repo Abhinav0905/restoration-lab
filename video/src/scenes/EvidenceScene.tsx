@@ -20,7 +20,7 @@ export const EvidenceScene = () => {
 
       <div style={{position: 'absolute', left: 116, top: 86, width: 1688}}>
         <Eyebrow>3 · Technical details</Eyebrow>
-        <div style={{fontSize: 74, fontWeight: 860, lineHeight: 1.03, letterSpacing: -4, marginTop: 22}}>
+        <div style={{fontSize: 88, fontWeight: 860, lineHeight: 1.03, letterSpacing: -4.5, marginTop: 22}}>
           Four checks. One plain-language receipt.
         </div>
       </div>
@@ -45,8 +45,8 @@ export const EvidenceScene = () => {
               }}
             >
               <div style={{fontFamily: mono, color: palette.amber, fontSize: 15, letterSpacing: 2}}>{number}</div>
-              <div style={{fontSize: 27, fontWeight: 820, marginTop: 12}}>{title}</div>
-              <div style={{color: palette.muted, fontSize: 19, lineHeight: 1.45, marginTop: 8}}>{detail}</div>
+              <div style={{fontSize: 31, fontWeight: 820, marginTop: 12}}>{title}</div>
+              <div style={{color: palette.muted, fontSize: 22, lineHeight: 1.4, marginTop: 8}}>{detail}</div>
             </div>
           );
         })}
@@ -93,7 +93,7 @@ export const EvidenceScene = () => {
       <CaptionLayer>
         <BasicCaptions
           name="Evidence captions"
-          width={1450}
+          width={1570}
           captions={[
             {text: 'Every verdict comes from deterministic graph checks.', startMs: 500, endMs: 3800, timestampMs: 2150, confidence: null, pageBreakAfter: true},
             {text: 'Fault reachability, dual-source backfeed, source capacity and critical-load restoration.', startMs: 3800, endMs: 9000, timestampMs: 6400, confidence: null, pageBreakAfter: true},

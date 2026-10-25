@@ -75,13 +75,16 @@ const BasicCaptionsContent: React.FC<BasicCaptionsProps> = ({
       {page ? (
         <div
           style={{
-            backgroundColor: 'rgba(64, 64, 64, 0.75)',
+            backgroundColor: 'rgba(5, 12, 8, 0.94)',
+            border: '1px solid rgba(133, 242, 163, 0.38)',
+            borderRadius: 12,
+            boxShadow: '0 18px 50px rgba(0, 0, 0, 0.48)',
             color: '#ffffff',
             fontFamily: 'Arial, Helvetica, sans-serif',
-            fontSize: 64,
-            fontWeight: 400,
-            lineHeight: 1.2,
-            padding: '14px 22px',
+            fontSize: 46,
+            fontWeight: 760,
+            lineHeight: 1.16,
+            padding: '18px 30px',
             textAlign: 'center',
             textWrap: 'balance',
             whiteSpace: 'pre-wrap',

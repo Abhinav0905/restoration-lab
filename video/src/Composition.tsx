@@ -16,11 +16,11 @@ export const RestorationLabVideo = () => {
       <Series.Sequence name="Concept" durationInFrames={330} premountFor={fps}>
         <ContextScene />
       </Series.Sequence>
-      <Series.Sequence name="Safety evidence" durationInFrames={720} premountFor={fps}>
-        <EvidenceScene />
-      </Series.Sequence>
       <Series.Sequence name="Recorded demo" durationInFrames={900} premountFor={fps}>
         <DemoScene />
+      </Series.Sequence>
+      <Series.Sequence name="Technical approach" durationInFrames={720} premountFor={fps}>
+        <EvidenceScene />
       </Series.Sequence>
       <Series.Sequence name="Closing" durationInFrames={330} premountFor={fps}>
         <ClosingScene />

@@ -69,12 +69,10 @@ export const CaptionLayer = ({children}: {children: ReactNode}) => (
   <div
     style={{
       position: 'absolute',
-      left: 235,
-      bottom: 42,
-      width: 1450,
+      left: 175,
+      bottom: 48,
+      width: 1570,
       zIndex: 20,
-      transform: 'scale(.62)',
-      transformOrigin: 'bottom center',
     }}
   >
     {children}
